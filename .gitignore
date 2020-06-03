@@ -1,0 +1,12 @@
+*.jpg
+*.jpeg
+*.png
+*.h5
+*.pb
+*.zip
+*.npz
+*.npy
+*ubyte.gz
+*.data-00000-of-00001
+dockerscripts/License_Detection_Model/
+tfserving/

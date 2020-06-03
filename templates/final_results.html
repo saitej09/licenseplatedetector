@@ -1,0 +1,25 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Detected Images</title>
+</head>
+<body>
+    <img src="{{ user_image }}" alt="User Image">
+</body>
+</html> -->
+
+<!-- <!doctype html>
+<title>Detected Images</title>
+{% if filename %}
+  <h1>some text<img src="{{filename}}"> more text!</h1>
+{% else %}
+  <h1>no image for whatever reason</h1>
+{% endif %} -->
+
+<!doctype html>
+<title>Hello from Flask</title>
+{% if filename %}
+  <h1>some text <img src="{{ url_for('uploadDetectedImage', filename=filename) }}">more text!</h1>
+{% else %}
+  <h1>no image for whatever reason</h1>
+{% endif %}
